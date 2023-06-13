@@ -8,32 +8,127 @@
 </head>
 <body>
     <style>
-        #header{
-            background-color: lightblue;
-            color: black;
-            font-size: xx-large;
-            font-family: Arial, Helvetica, sans-serif;
+         * {
+            box-sizing: content-box;
+            text-align: center;
         }
 
-        div  {
-            background-color: bisque;
+        #general{
+            position:absolute;
+            width: 100%;
+        }
+
+        #header{
+            
+            width: 100%;
+            height: 100px;
+            float: none;
+            background-color: rgb(108, 170, 189);
             color: black;
             font-family: Arial, Helvetica, sans-serif;
+            
+            
         }
+        #Titulo {
+            
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            color: black;  
+            font-size: 75px;
+            
+        }
+
+        #main  {
+            background-color:white;    
+            width: 100%;
+            height: 620px;
+            float:left    
+        }
+
+
+        #menu  {
+            background-color: bisque;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;            
+            color: black;
+            width: 20%;
+            height: 620px;
+            float:left         
+        }
+
+        #logo  {
+            background-color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;            
+            color: black;
+            width: 80%;
+            height: 620px;
+            float:right;       
+        }
+
+        #Lista  {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;            
+            color: white;
+            width: 100%;
+            float: right;  
+            font-size: 20px;  
+            
+        }
+
+        #LigaEspanola{
+            width: 100%;
+            height: 40px;
+
+             
+        }
+        #LigaAlemana{
+            width: 100%;
+            height: 40px;
+             
+        }
+        #LigaItaliana{
+            width: 100%;
+            height: 40px;
+             
+        }
+        #LigaArgentina{
+            width: 100%;
+            height: 40px;
+             
+        }
+        #LigaInglesa{
+            width: 100%;
+            height: 40px;
+             
+        }
+
 
     </style>
+    <div id="general">
+
     <div id="header">
-        <H1>LIGAS</H1>
+        <H1 id="Titulo" >LIGAS</H1>
     </div>
-    <div id="listas">   
-        <ul>
-            <li> <a href="LigaEspanola.html">LIGA ESPANOLA</a> </li>
-            <li><a href="LigaInglesa.html">LIGA INGLESA</a></li>
-            <li><a href="LigaAlemana.html">LIGA ALEMANA</a></li>
-            <li><a href="LigaItaliana.html">LIGA ITALIANA</a></li>
-            <li><a href="LigaArgentina.html">LIGA ARGENTINA</a></li>
+
+    <div id="main">   
+        
+        <div id="menu">
+        <ul id="Lista">
+            <li id="LigaEspanola"> <a href="LigaEspanola.html">LIGA ESPANOLA</a> </li>
+            <li  id="LigaInglesa"><a href="LigaInglesa.html">LIGA INGLESA</a></li>
+            <li  id="LigaAlemana"><a href="LigaAlemana.html">LIGA ALEMANA</a></li>
+            <li  id="LigaItaliana"><a href="LigaItaliana.html">LIGA ITALIANA</a></li>
+            <li  id="LigaArgentina"><a href="LigaArgentina.html">LIGA ARGENTINA</a></li>
         </ul>
     </div>
+        <div id="logo">
+            <img src="logopag.png" alt="logopagina">
+        </div>
+    </div>
+
+    <div id="footer">
+
+    </div>
+
+</div>
     
 </body>
 </html>

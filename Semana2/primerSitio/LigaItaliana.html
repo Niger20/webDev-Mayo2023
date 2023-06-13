@@ -8,14 +8,31 @@
 </head>
 <body>
     <style>
+
         #header{
             background-color: lightblue;
             color: black;
             font-size: xx-large;
             font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            
         }
 
-        #tabla  {
+        #Titulo {
+
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 50px;
+            font-weight: bold;
+            color: black;       
+
+        }
+
+
+
+        #divtabla  {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             background-color: bisque;
             color: black;
             font-weight: 700;
@@ -23,46 +40,105 @@
         }
         
         #regresar  {
-            background-color: bisque;
-            color: black;
+            background-color: bisque;            
             font-weight: 700;
             font-family: Arial, Helvetica, sans-serif;
+        } 
+
+        #enlaceRegresar {
+            background-color: white;
+            font-size: 25px;
+            color: blakc;
+            border: 2px;
+            border-style:solid;
+            border-color: black;
+            border-radius: 5px;
+            
         }
 
+        #tabla{
+            border: 2px;
+            border-style:solid;
+            border-color: black;
+            border-radius: 0cm;
+            border-collapse: collapse;
+            
+        }
+
+        #celdaEncabezado{
+            color: black;
+            font-size: 20px;
+            text-align: center;
+            border: 2px;
+            border-style: solid;
+            border-collapse: collapse;
+            border-color: black;
+            background-color:white;
+        }
+
+        #celdaPrimero{
+            text-align: center;
+            border: 2px;
+            border-style: solid;
+            border-collapse: collapse;
+            border-color: black;
+            background-color: gold;
+        }
+
+        #celdaSegundo{
+            text-align: center;
+            border: 2px;
+            border-style: solid;
+            border-collapse: collapse;
+            border-color: black;
+            background-color: silver;
+        }
+
+        #celdaTercero{
+            text-align: center;
+            border: 2px;
+            border-style: solid;
+            border-collapse: collapse;
+            border-color: black;
+            background-color: rgb(191, 137, 112);
+        }      
+      
+
     </style>
+
     <div id="header">
-        <h1>LIGA ITALIANA</h1>
+        <h1 id="Titulo">LIGA ITALIANA</h1>
     </div>
-    <div id="tabla">
-        <table border="">
+    <div id="divtabla">
+        <table id="tabla">
             <tr>
-              <td>PUESTO</td>
-              <td>ESCUDO</td>
-              <td>EQUIPO</td>
-              <td>PUNTOS</td>
+              <td id="celdaEncabezado">PUESTO</td>
+              <td id="celdaEncabezado">ESCUDO</td>
+              <td id="celdaEncabezado">EQUIPO</td>
+              <td id="celdaEncabezado">PUNTOS</td>
             </tr>  
             <tr>
-              <td align="center">1</td>
-              <td align="center"><img src="napoli.png" alt="escudo del Napoli" width="30px" height="30px"></td>
-              <td align="center">NAPOLI</td>
-              <td align="center">90</td>
+              <td id="celdaPrimero" align="center">1</td>
+              <td id="celdaPrimero" align="center"><img src="napoli.png" alt="escudo del Napoli" width="30px" height="30px"></td>
+              <td id="celdaPrimero" align="center">NAPOLI</td>
+              <td id="celdaPrimero" align="center">90</td>
             </tr>
             <tr>
-                <td align="center">2</td>
-                <td align="center"><img src="Lazio.png" alt="escudo del Lazio" width="30px" height="30px"></td>
-                <td align="center">LAZIO</td>
-                <td align="center">74</td>
+                <td id="celdaSegundo" align="center">2</td>
+                <td id="celdaSegundo" align="center"><img src="Lazio.png" alt="escudo del Lazio" width="30px" height="30px"></td>
+                <td id="celdaSegundo" align="center">LAZIO</td>
+                <td id="celdaSegundo" align="center">74</td>
             </tr>
             <tr>
-                <td align="center">3</td>
-                <td align="center"><img src="Inter.png" alt="escudo del Inter" width="30px" height="30px"></td>
-                <td align="center">INTER</td>
-                <td align="center" >72</td>
+                <td id="celdaTercero" align="center">3</td>
+                <td id="celdaTercero" align="center"><img src="Inter.png" alt="escudo del Inter" width="30px" height="30px"></td>
+                <td id="celdaTercero" align="center">INTER</td>
+                <td id="celdaTercero" align="center" >72</td>
             </tr>
           </table>
     </div>
     <div id="regresar">
-        <h3> <a href="index.html"> <---- volver </a></h3>
+       <a id="enlaceRegresar" href="index.html"> <---- volver </a>
     </div>
 </body>
 </html>
