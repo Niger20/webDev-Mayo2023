@@ -9,27 +9,60 @@
 <body>
     <style>
 
-        #header{
-            background-color: lightblue;
-            color: black;
-            font-size: xx-large;
-            font-family: Arial, Helvetica, sans-serif;
+            * {
+            box-sizing: content-box;
             text-align: center;
+        }
+
+        #general{
+            position:absolute;
+            width: 100%;
+        }
+
+        #header{
+            
+            width: 100%;
+            height: 150px;            
+            float: left;
+            background-color: rgb(108, 170, 189);
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            
+            
+        }
+        #Titulo {
+            
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            color: black;  
+            font-size: 75px;
             
         }
 
-        #Titulo {
-
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 50px;
-            font-weight: bold;
-            color: black;       
-
+        #main  {
+            background-color:black;    
+            width: 100%;
+            height: 300px;
+            float:left    
         }
 
+        #footer  {
+            background-color:white;  
+            width: 100%;
+            height: 200px;
+            float:left    
+        }
 
+        #regresar{
+            background-color:white;  
+            width: 100%;
+            height: 100px;
+            float:left  
+        }
 
         #divtabla  {
+            width: 100%;
+            height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -37,26 +70,28 @@
             color: black;
             font-weight: 700;
             font-family: Arial, Helvetica, sans-serif;
+            float: none;
         }
         
-        #regresar  {
-            background-color: bisque;            
-            font-weight: 700;
-            font-family: Arial, Helvetica, sans-serif;
-        } 
 
         #enlaceRegresar {
-            background-color: white;
-            font-size: 25px;
-            color: blakc;
+            color: black;
+            background-color:rgb(236, 114, 114);
+            height: 150px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            font-size: 30px;
+            color: black;
             border: 2px;
             border-style:solid;
             border-color: black;
             border-radius: 5px;
             
-        }
+        }   
 
         #tabla{
+            width: 50%;
+            height: 150px;
             border: 2px;
             border-style:solid;
             border-color: black;
@@ -105,10 +140,13 @@
       
 
     </style>
+    <div id="general">
 
     <div id="header">
         <h1 id="Titulo">LIGA ALEMANA</h1>
     </div>
+
+    <div id="main">
     <div id="divtabla">
         <table id="tabla">
             <tr>
@@ -121,7 +159,7 @@
               <td id="celdaPrimero" >1</td>
               <td id="celdaPrimero"  ><img src="bayern.png" alt="escudo del BAYERN" width="30px" height="30px"></td>
               <td id="celdaPrimero"  >BAYERN</td>
-              <td id="celdaPrimero"  71</td>
+              <td id="celdaPrimero" > 71</td>
             </tr>
             <tr>
                 <td id="celdaSegundo"  >2</td>
@@ -137,8 +175,14 @@
             </tr>
           </table>
     </div>
+</div>
+
+    <div id="footer">
     <div id="regresar">
         <a id= "enlaceRegresar" href="index.html"> VOLVER </a>
     </div>
+</div>
+
+</div>
 </body>
 </html>
