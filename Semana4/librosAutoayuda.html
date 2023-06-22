@@ -2,22 +2,41 @@
 <html lang="en">
 
 <style>
-    .background1{
-        background-color: #ebe2cd;
-    }
 
-    .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Ajusta la altura según tus necesidades */
-  }
+        * {
+            box-sizing: content-box;
+            text-align: center;
+        }
+        
+
+        .general{
+            position:absolute;
+            width: 100%;    
+        }
+
+        .main  {   
+            
+            width: 100%;
+            height: 820px;    
+            display: flex;
+            justify-content: center;
+        }
+
+        
+        .carrusel{  
+                width: 60%; 
+                height: 50%;
+        }
+
+        .background1{
+        background-color: #ebe2cd;
+        }
 
     
 </style>
 
 <head>
-  <title>BIBLIOTECA</title>
+  <title>LIBROS DE AUTOAYUDA</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -28,7 +47,7 @@
 
 </head>
 
-<body class="background1">
+<body class="background1 general">
 
     <div class="container-fluid background1">
 
@@ -54,14 +73,38 @@
         </div>
 
         <div class="container-fluid main">
-            <main class="main">
+            <main>
              
-              <div class="logo">
-                <img src="logobiblio.png" alt="logobiblio">
-              </div>
-              
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab facere, commodi ipsam quo quidem cumque, nulla, quia aliquid nam ipsa veritatis consequuntur corrupti exercitationem maiores ex eaque deserunt fuga laboriosam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, magni modi asperiores corrupti at iusto. Natus, temporibus fugit delectus corrupti totam ipsum distinctio qui reiciendis! Perferendis, mollitia exercitationem. Porro, pariatur? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem hic esse eligendi autem accusamus ipsa blanditiis, itaque, quos placeat rem iure vel, praesentium incidunt perferendis deleniti. Aspernatur aperiam voluptatem nobis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem et a illum. Animi necessitatibus reprehenderit sequi quam inventore cupiditate rem pariatur neque asperiores. Repellendus quod in quisquam magni, illum velit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur dignissimos asperiores rerum</p>
-               
+                <div class="main">
+                    <div class="carrusel">
+                    
+                        <div id="carouselExample" class="carousel slide">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="portadaslibrosautoayuda/lamagia.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="portadaslibrosautoayuda/monje.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="portadaslibrosautoayuda/portadahabitos.jpg" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+
+                    </div>
+
+
+                </div>
+                
             </main>
         </div>
 
