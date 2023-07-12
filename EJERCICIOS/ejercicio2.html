@@ -1,0 +1,33 @@
+<script>
+
+//Usted va a hacer compras por 12000 colones en un comercio
+//y el vendedor le ofrece un descuento de 1000 colones, demuestre como sería más barato el precio final, si primero le aplican el descuento y
+//luego le cobran el 13% de impuesto o que primero le carguen el 13% de impuesto luego le hagan el descuento.
+
+    var impuesto = 0.13;
+    var compra = 12000;
+    var descuento = 1000;
+    
+    var impuesto1 = Number((compra - descuento)*impuesto);
+    var total1 = Number(compra-descuento+impuesto1);
+
+    var impuesto2 = Number((compra * impuesto));
+    var total2 = Number(compra + impuesto2 - descuento);
+
+    if (total1 < total2) {
+
+        alert("Es conveniente que le apliquen primero el descuento y despues el impuesto");
+        alert("El total es de: " + total1);
+
+    }else{
+
+        alert("Es conveniente que le apliquen primero el impuesto y luego el descuento");
+        alert("El total es de: " + total2);
+
+    }
+
+
+
+
+
+</script>
